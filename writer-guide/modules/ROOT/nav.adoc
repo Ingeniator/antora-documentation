@@ -1,0 +1,1 @@
+* xref:quick_start.adoc[Быстрый старт]

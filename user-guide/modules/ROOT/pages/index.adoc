@@ -1,0 +1,5 @@
+= Руководство пользователя 
+
+include::main:ROOT:partial$vars.adoc[]
+
+Руководство описывает... {name}

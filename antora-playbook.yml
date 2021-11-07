@@ -1,0 +1,28 @@
+site:
+  title: Документация
+  # the 404 page and sitemap files only get generated when the url property is set
+  url: https://docs.example.ru/
+  start_page: main::index.adoc
+content:
+  sources:
+  - url: .
+    branches: HEAD
+    start_path: main
+  - url: .
+    branches: HEAD
+    start_path: user-guide
+  - url: .
+    branches: HEAD
+    start_path: developer-guide
+  - url: .
+    branches: HEAD
+    start_path: administrator-guide
+  - url: .
+    branches: HEAD
+    start_path: writer-guide
+ui:
+  bundle:
+    #url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    url: ./docs-ui/ui-bundle.zip
+    snapshot: true
+  supplemental_files: ./docs-ui/supplemental-ui

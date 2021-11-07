@@ -1,0 +1,6 @@
+name: writer
+title: Руководство технического писателя
+version: 0.1
+nav:
+- modules/ROOT/nav.adoc
+- modules/contribute/nav.adoc

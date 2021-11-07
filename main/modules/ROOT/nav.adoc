@@ -1,0 +1,5 @@
+.xref:index.adoc[О системе]
+ * xref:login.adoc[Вход]
+ * xref:register.adoc[Регистрация]
+ * xref:features.adoc[Функционал]
+ * xref:faq.adoc[Частые вопросы и ответы]

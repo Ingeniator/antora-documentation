@@ -1,0 +1,6 @@
+name: main
+title: Название системы
+version: master
+nav:
+- modules/ROOT/nav.adoc
+- modules/module2/nav.adoc

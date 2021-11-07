@@ -1,0 +1,5 @@
+name: administrator
+title: Руководство администратора
+version: 0.1
+nav:
+- modules/ROOT/nav.adoc

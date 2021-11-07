@@ -1,0 +1,88 @@
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <a href="https://example.ru/">
+          <svg width="168" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="73" height="32" rx="1"></rect>
+            <path d="M23.314 9.6h-6.857v17.829h-4.8V9.599H4.8V4.8h18.514v4.8z" fill="#F7F8FA"></path>
+            <defs>
+              <linearGradient id="logo_svg__paint0_linear" x1="0.028" y1="32.002" x2="73.024" y2="32.002"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8E2DE2"></stop>
+                <stop offset="1" stop-color="#4C33B4"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
+      </div>
+      {{#if env.ALGOLIA_API_KEY}}
+      <div class="navbar-item hide-for-print">
+        <input id="search-input" type="text" placeholder="Search docs">
+      </div>
+      {{/if}}
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">Главная</div>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/main/index.html">О системе</a>
+            <a class="navbar-item" href="/main/features.html">Возможности системы</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="mailto:smth_help@example.ru?subject=smth_bug">Сообщить о проблеме</a>
+            <a class="navbar-item" href="mailto:smth_help@example.ru?subject=smth_cr">Предложить изменения</a>
+            <hr class="navbar-divider">
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">Опыт использования</div>
+          <div class="navbar-dropdown">
+            <div class="navbar-item"><strong>Раздел1</strong></div>
+            <a class="navbar-item" href="/main/usecases/case1.html">Пример1</a>
+            <hr class="navbar-divider">
+            <div class="navbar-item"><strong>Раздел2</strong></div>
+            <a class="navbar-item" href="/">Пример 2</a>
+            <a class="navbar-item" href="/">Пример 3</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">Помощь</div>
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item" href="mailto:smth_help@example.ru?subject=smth_question">Проконсультироваться</a>
+            <a class="navbar-item" href="mailto:smth_help@example.ru?subject=smth_demo">Запросить демо</a>
+            <a class="navbar-item" href="/main/faq.html">ЧаВо</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">Ресурсы</div>
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item" href="/">SDK</a>
+            <a class="navbar-item" href="/">Модели</a>
+            <a class="navbar-item" href="/">Датасеты</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-link">Сообщество</div>
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item" href="https://web.telegram.org/k/">Телеграмм</a>
+            <a class="navbar-item" href="https://web.whatsapp.com/">Whatsapp</a>
+          </div>
+        </div>
+        <a class="navbar-item" href="mailto:smth_help@example.ru?subject=smth_feedback">
+          <span class="icon">
+            <svg aria-hidden="true" data-icon="email" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M444.556,85.218H48.942C21.954,85.218,0,107.171,0,134.16v225.177c0,26.988,21.954,48.942,48.942,48.942h395.613  c26.988,0,48.941-21.954,48.941-48.942V134.16C493.497,107.171,471.544,85.218,444.556,85.218z M460.87,134.16v225.177  c0,2.574-0.725,4.924-1.793,7.09L343.74,251.081l117.097-117.097C460.837,134.049,460.87,134.096,460.87,134.16z M32.628,359.336  V134.16c0-0.064,0.033-0.11,0.033-0.175l117.097,117.097L34.413,366.426C33.353,364.26,32.628,361.911,32.628,359.336z   M251.784,296.902c-2.692,2.691-7.378,2.691-10.07,0L62.667,117.846h368.172L251.784,296.902z M172.827,274.152l45.818,45.819  c7.512,7.511,17.493,11.645,28.104,11.645c10.61,0,20.592-4.134,28.104-11.645l45.82-45.819l101.49,101.499H71.327L172.827,274.152z  ">
+                </path>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
