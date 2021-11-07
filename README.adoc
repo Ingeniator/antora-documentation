@@ -1,0 +1,27 @@
+= My Antora Demo Site and Playbook Project
+
+== Generate the Demo Site
+
+To build run 
+docker build -t ant -f devops/docker/Dockerfile .; docker run -p 8080:80 ant
+
+To make gif from mov
+ffmpeg -ss 0 -t 5 -i test.mov -vf "fps=10,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif
+
+
+== Inspered by 
+
+https://fedoramagazine.org/using-antora-for-your-open-source-documentation/
+https://docs.antora.org/antora/2.3/
+https://owncloud.com/news/owncloud-docs-migrating-antora-pt-1-2/
+https://github.com/couchbase/docs-site
+https://docs.couchbase.com/home/index.html
+https://github.com/couchbase/docs-ui
+
+== Copyright and License
+
+Copyright (C) 2021 Ingeniator
+
+Use of this software is granted under the terms of the https://www.mozilla.org/en-US/MPL/2.0/[Mozilla Public License Version 2.0] (MPL-2.0).
+See link:LICENSE[] to find the full license text.
+
