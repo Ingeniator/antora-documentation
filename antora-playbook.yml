@@ -3,7 +3,15 @@ site:
   # the 404 page and sitemap files only get generated when the url property is set
   url: https://docs.example.ru/
   start_page: main::index.adoc
+asciidoc:
+  attributes:
+    experimental: ''
+    icons: font
+    name: АС Название
+    url: https://example.ru/
+    email: mailto:help@example.ru?subject=Тема
 content:
+  edit_url: 'https://github.com/Ingeniator/antora-documentation/edit/{path}'
   sources:
   - url: .
     branches: HEAD

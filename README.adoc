@@ -3,13 +3,25 @@
 == Generate the Demo Site
 
 To build run 
-docker build -t ant -f devops/docker/Dockerfile .; docker run -p 8080:80 ant
+
+``
+docker build --build-arg node="node:latest" --build-arg nginx="nginx:stable" -t ant -f devops/docker/Dockerfile .; docker run -p 80:8080 ant
+``
+
+To check xrefs before build:
+
+``
+$ npm install -g gitlab:antora/xref-validator
+$ NODE_PATH="$(npm -g root)" antora --generator @antora/xref-validator antora-playbook.yml
+``
 
 To make gif from mov
+
+``
 ffmpeg -ss 0 -t 5 -i test.mov -vf "fps=10,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif
+``
 
-
-== Inspered by 
+== Inspired by 
 
 https://fedoramagazine.org/using-antora-for-your-open-source-documentation/
 https://docs.antora.org/antora/2.3/
@@ -17,6 +29,19 @@ https://owncloud.com/news/owncloud-docs-migrating-antora-pt-1-2/
 https://github.com/couchbase/docs-site
 https://docs.couchbase.com/home/index.html
 https://github.com/couchbase/docs-ui
+
+== TODO
+
+* add extensions https://docs.antora.org/antora/2.3/playbook/asciidoc-extensions/ 
+** tabs
+** swagger
+** https://docs.asciidoctor.org/asciidoctor.js/latest/extend/extensions/ecosystem/
+** https://github.com/mogztter/asciidoctor-emoji
+** https://github.com/mogztter/asciidoctor-chart
+** https://kroki.io
+** https://gitlab.com/djencks/asciidoctor-openblock
+* write extension https://docs.asciidoctor.org/asciidoctor.js/latest/extend/extensions/ for https://gebish.org/manual/current/#introduction
+* add lunr search https://gitlab.com/antora/antora-lunr-extension
 
 == Copyright and License
 

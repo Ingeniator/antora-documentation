@@ -75,3 +75,11 @@
   width: auto;
   vertical-align: -0.1em;
 }
+
+nav.pagination .prev::before {
+  content: "Назад";
+}
+
+nav.pagination .next::before {
+  content: "Далее";
+}
