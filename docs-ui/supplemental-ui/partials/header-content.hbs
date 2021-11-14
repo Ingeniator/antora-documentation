@@ -16,9 +16,9 @@
           </svg>
         </a>
       </div>
-      {{#if env.ALGOLIA_API_KEY}}
+      {{#if env.DOCSEARCH_ENABLED}}
       <div class="navbar-item hide-for-print">
-        <input id="search-input" type="text" placeholder="Search docs">
+        <input id="search-input" type="text" placeholder="Поиск...">
       </div>
       {{/if}}
       <button class="navbar-burger" data-target="topbar-nav">

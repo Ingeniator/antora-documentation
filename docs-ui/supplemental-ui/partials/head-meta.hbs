@@ -1,6 +1,8 @@
     <link rel="stylesheet" href="{{uiRootPath}}/css/site-extra.css">
-    {{#if env.ALGOLIA_API_KEY}}
-    <link rel="stylesheet" href="{{uiRootPath}}/css/vendor/docsearch.min.css">
-    <!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css -->
+    {{#if env.DOCSEARCH_ENABLED}}
+    <link rel="stylesheet" href="{{uiRootPath}}/css/search.css">
     {{/if}}
     <link rel="icon" href="{{siteRootPath}}/favicon.ico" type="image/x-icon">
+    {{#if env.CHARTS}}
+    <link href="{{uiRootPath}}/css/chartist.min.css" rel="stylesheet">
+    {{/if}}

@@ -7,11 +7,15 @@ ENV CI=true
 
 WORKDIR /app
 COPY . .
-RUN npm i -g @antora/cli@2.3 @antora/site-generator-default@2.3; 
-RUN antora antora-playbook.yml --attribute page-pagination= --stacktrace;
-
+RUN npm i -g @antora/cli@2.3 @antora/site-generator-default@2.3 antora-site-generator-lunr antora-lunr; 
+RUN npm i lorem-ipsum asciidoctor-chart asciidoctor-kroki lunr-languages;
+RUN antora antora-playbook.yml --generator antora-site-generator-lunr --attribute page-pagination= --stacktrace;
 
 FROM ${nginx}
+ENV DOCSEARCH_ENABLED=true
+ENV DOCSEARCH_ENGINE=lunr
+ENV DOCSEARCH_LANG=ru
+
 
 LABEL project="example-docs"
 LABEL version="0.0.1"
