@@ -10,6 +10,7 @@ asciidoc:
     name: АС Название
     url: https://example.ru/
     email: mailto:help@example.ru?subject=Тема
+  - asciidoctor-chart
 content:
   edit_url: 'https://github.com/Ingeniator/antora-documentation/edit/{path}'
   sources:

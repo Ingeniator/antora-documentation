@@ -1,5 +1,51 @@
 = Введение
 
-{name} предназначено для ...
+
+.Google Landing page
+screenshot::http://google.com[google]
+
+{name} предназначено для 
+
+lorem::words[size=2]
+
+[chart,line]
+....
+January,February,March
+28,48,40
+65,59,80
+....
+
+[graphviz]
+....
+digraph foo {
+  node [style=rounded]
+  node1 [shape=box]
+  node2 [fillcolor=yellow, style="rounded,filled", shape=diamond]
+  node3 [shape=record, label="{ a | b | c }"]
+
+  node1 -> node2 -> node3
+}
+....
+
+[mermaid,abcd-flowchart,svg]
+....
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+....
+
+.PlantUML example
+[plantuml#diagAliceBob,alice-and-bob,svg,role=sequence]
+....
+alice -> bob
+....
+
+== sdfds
+
+lorem::sentences[size=20]
+
+lorem::paragraphs[size=2]
 
 // TODO Описание назначения/возможностей/решаемых задач - для клиентов!
