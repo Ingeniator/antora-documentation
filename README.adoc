@@ -41,7 +41,19 @@ https://github.com/couchbase/docs-ui
 ** https://gitlab.com/djencks/asciidoctor-openblock
 * write extension https://docs.asciidoctor.org/asciidoctor.js/latest/extend/extensions/ for https://gebish.org/manual/current/#introduction
 * add lunr ru search https://gitlab.com/antora/antora-lunr-extension
+** https://github.com/Mogztter/antora-lunr/blob/main/lib/generate-index.js
+** https://lunrjs.com/guides/language_support.html
+* my screenshots 
+** https://github.com/Mogztter/asciidoctor-kroki/blob/master/dist/browser/asciidoctor-kroki.js
+** https://github.com/asciidoctor/asciidoctorj-screenshot/blob/master/src/main/groovy/org/asciidoctor/extension/ScreenshotMacroBlock.groovy
+** https://github.com/asciidoctor/asciidoctorj-screenshot
+** https://asciidoctor.github.io/asciidoctor.js/2.2.5/#inlinecreate
 
+https://github.com/puppeteer/puppeteer
+https://stackoverflow.com/questions/23729585/generate-animated-gif-with-gm-in-node-js
+https://www.npmjs.com/package/make-a-gif
+https://dev.to/rajnavadiya786/how-to-capture-website-screenshots-using-node-js-and-puppeteer-35i9
+https://hackernoon.com/how-to-take-screenshots-in-the-browser-using-javascript-l92k3xq7
 == Copyright and License
 
 Copyright (C) 2021 Ingeniator
