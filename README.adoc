@@ -36,9 +36,8 @@ https://github.com/couchbase/docs-ui
 ** tabs
 ** swagger
 ** https://docs.asciidoctor.org/asciidoctor.js/latest/extend/extensions/ecosystem/
-** https://github.com/mogztter/asciidoctor-emoji
-** https://github.com/mogztter/asciidoctor-chart
 ** https://kroki.io
+** more extentions https://gitlab.com/djencks/simple-examples/-/tree/main
 ** https://gitlab.com/djencks/asciidoctor-openblock
 * write extension https://docs.asciidoctor.org/asciidoctor.js/latest/extend/extensions/ for https://gebish.org/manual/current/#introduction
 * add lunr search https://gitlab.com/antora/antora-lunr-extension

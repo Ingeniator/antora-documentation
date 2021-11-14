@@ -6,12 +6,16 @@ site:
 asciidoc:
   attributes:
     experimental: ''
+    #TODO kroki-server-url: http://localhost:8080
+    kroki-fetch-diagram: true
     icons: font
     name: АС Название
     url: https://example.ru/
     email: mailto:help@example.ru?subject=Тема
+  extensions:
   - ./lib/lorem-block.js
   - asciidoctor-chart
+  - asciidoctor-kroki
 content:
   edit_url: 'https://github.com/Ingeniator/antora-documentation/edit/{path}'
   sources:
@@ -36,3 +40,4 @@ ui:
     url: ./docs-ui/ui-bundle.zip
     snapshot: true
   supplemental_files: ./docs-ui/supplemental-ui
+  #supplemental_files: /usr/local/lib/node_modules/antora-lunr/supplemental_ui

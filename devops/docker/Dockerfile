@@ -1,9 +1,21 @@
 ARG node="node:latest"
 ARG nginx="nginx:stable" 
 
-
 FROM ${node} AS build
 ENV CI=true
+ENV CHARTS=true
+ENV DOCSEARCH_ENABLED=true
+ENV DOCSEARCH_ENGINE=lunr
+ENV DOCSEARCH_LANGS=ru
+
+
+ARG kroki=false 
+#install kroki server
+COPY devops/kroki/kroki-server-v0.15.1.jar .
+RUN if ["$kroki" == "true"] ; then \
+    add-apt-repository ppa:webupd8team/java; apt-get update; apt-get -y install default-jre; \
+    java -DKROKI_SAFE_MODE=unsafe -jar kroki-server-v0.15.1.jar &\
+    fi
 
 WORKDIR /app
 COPY . .
