@@ -1,8 +1,12 @@
 = Введение
 
 
-.Google Landing page
+.Google
 screenshot::http://google.com[google]
+
+screenshot::http://google.com[google2]
+
+screenshot::http://google.com[]
 
 {name} предназначено для 
 
